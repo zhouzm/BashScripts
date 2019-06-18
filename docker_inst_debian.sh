@@ -34,3 +34,6 @@ curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compo
 
 # Apply executable permissions to the binary
 chmod +x /usr/local/bin/docker-compose
+
+# mkdir docker container directory
+mkdir /docker-containers
