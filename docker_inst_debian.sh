@@ -4,7 +4,7 @@
 apt-get update
 
 # Install packages to allow apt to use a repository over HTTPS
-apt-get install \
+apt-get -y install \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -27,7 +27,7 @@ add-apt-repository \
 apt-get update
 
 # Install the latest version of Docker CE and containerd, or go to the next step to install a specific version
-apt-get install docker-ce docker-ce-cli containerd.io
+apt-get -y install docker-ce docker-ce-cli containerd.io
 
 # download the current stable release of Docker Compose
 curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
