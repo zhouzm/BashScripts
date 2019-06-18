@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 # Update the apt package index
 apt-get update
